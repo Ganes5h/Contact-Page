@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+  
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+
+    }
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    /* ---header---- */
+    .header {
+    padding: 15px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.header-heading {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.header-heading p {
+    margin: 2px;
+}
+
+.header-heading h1 {
+    margin: 5px;
+    font-size: 45px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 950px) {
+    .header-heading h1 {
+        font-size: 30px;
+    }
+
+    .maharaj {
+        width: 100px;
+    }
+
+    .finallogo {
+        width: 100px;
+    }
+
+    .header-heading p {
+        margin: 0px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .header-heading h1 {
+        font-size: 19px;
+    }
+
+    .maharaj {
+        width: 60px;
+    }
+
+    .finallogo {
+        width: 60px;
+    }
+
+    .header-heading p {
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    .Founder {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .header-heading h1 {
+        font-size: 17px;
+    }
+}
+     .heading {
+        width: 100%;
+        height: 70px;
+        background-color: rgb(255, 183, 0);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+/* form */
+.form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+    }
+    .map {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 30px;
+        background-color: rgb(246, 246, 246);
+       
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid pink; */
+    }
+    /* .map h2{
+        padding: 0 0 20px 0;
+    } */
+    .map iframe{
+        box-shadow: 0px 10px 25px rgba(47, 46, 46, 0.25);
+
+    }
+    /* form */
+    .parentform{
+        background-color: rgb(120, 255, 255);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px;
+        align-items: center;
+        /* border: 2px solid orange; */
+    }
+    .for{
+    background-color: white;
+    box-shadow: 0px 5px 10px rgb(195, 193, 193);
+    margin: 10px;
+      
+      
+        border-radius: 10px;
+    }
+    
+    .for input,textarea,button{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: none;
+        background-color: rgb(223, 221, 221);
+        border-radius: 5px;
+        border: 0.5px solid rgb(212, 212, 212);
+       margin: 30px;
+       padding: 10px;
+    }
+    button{
+      
+        width :120px;
+        text-align: center;
+        color:white;
+        background-color: orange;
+        border: orange;
+    }
+    button:hover{
+        background-color: white;
+        color: orange;
+        border: 1px solid orange;
+    }
+    /* contact us */
+    .contactus{
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px rgb(195, 193, 193);
+        padding: 25px;
+        width: 360px;
+    }
+    .contactus .address{
+        display: flex;
+        flex-direction: row;
+     
+    }
+    .contactus .email{
+        display: flex;
+        flex-direction: row;
+    }
+    .contactus .phone{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contactus  img{
+        padding: 30px;
+    }
+    .contactus .phone a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    @media only screen and (max-width: 550px){
+        .for input,textarea{
+            width: 280px;
+        }
+        .map{
+            padding: 15px;
+        }
+        .vidya-info {
+            padding: 10px;
+        }
+        .contactus img {
+         padding: 20px;
+        }
+        
+    }
+
+          /* footer */
+          .footer {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0d233a;
+
+}
+.fot-sec {
+    width: 300px;
+
+    padding: 15px 50px;
+    color: white;
+    background-color: #0d233a;
+}
+
+.fot-sec h2 {
+    color: rgb(237, 199, 48);
+}
+
+.fot-sec a {
+    text-decoration: none;
+    color: white;
+}
+
+.fot-sec a:hover {
+    color: rgb(180, 169, 125);
+
+}
+.copyright {
+    color: white;
+    background-color: #0d233a;
+    padding-bottom: 10px;
+    width: 100%;
+
+    font-style: normal;
+    text-align: center;
+}
+
+
+
+
+</style>
+<body>
+    
+<div class="header">
+    <div ><img class="maharaj" src="Maharaj.png" width="150px"></div>
+    
+  <div class="header-heading"> 
+    <p>Vishw Bharat Seva Samiti</p>
+    <p class="Founder">Founder: Guruvarya Parshurambhau Nadihalli</p>
+    <h1>Shri Shivaji Vidyalay, Yellur</h1>
+    <p>Establishment: 1957</p>
+  </div>
+    <div ><img class="finallogo" src="Final logo.png" width="150px"></div>
+  </div>
+
+    <div class="heading" data-aos="fade-left">
+
+        <h1>Contact Us</h1>
+
+    </div>
+    <div class="form"> 
+        <div class="map" data-aos="fade-left">
+            <h1 >Our School Location</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7679.087892372479!2d74.51137902452953!3d15.77524700625248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d15.771401399999998!2d74.5111716!4m5!1s0x3bbf68a18f85b44f%3A0x124a0dc965c4fde3!2sQGHC%2B87X%20Shivaji%20High%20School%20Yellur%2C%20Yellur%2C%20Karnataka%20590005!3m2!1d15.778305399999999!2d74.5207046!5e0!3m2!1sen!2sin!4v1677519751325!5m2!1sen!2sin"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<div class="parentform">   
+    <div class="for" data-aos="fade-left">
+        <form action="javascript: sendmail()" method="post">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <input type="text" name="phone" id="phone" placeholder="Your Phone no" required>
+            <textarea id="message" rows="4" placeholder="Message"></textarea>
+            <button type="submit" >Send Message</button>
+        </form>
+    </div>
+
+    <div class="contactus"data-aos="fade-left">
+        <div class="address">
+            <img src="https://cdn-icons-png.flaticon.com/128/9865/9865362.png" width="50px" height="50px">
+          <div class="cont-info"><h4>Location:</h4>
+          <p>Shivaji Road, Parmeshwar Nagar, Yellur Belgaum , Karnataka</p></div>
+        </div>
+    
+        <div class="email">
+            <img src="https://cdn-icons-png.flaticon.com/128/3178/3178283.png" width="50px" height="50px">
+            <div class="cont-info"><h4>Email:</h4>
+            <p>ssv.official1957@gmail.com</p></div>
+        </div>
+    
+        <div class="phone">
+            <img src="https://cdn-icons-png.flaticon.com/128/8748/8748377.png"  width="50px" height="50px">
+            <div class="vidya-info"><h4>Call:</h4>
+                <p>Asst Tr. Vidya Patil </p>
+            <p><a href="tel: +91 9986434604">- 9986434604</a></p></div>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+    <div class="fot-sec" data-aos="fade-left">
+        <h2>About Us</h2>
+        <p>Our school is dedicated to providing quality education to our students, preparing them for a successful
+            future.
+        </p>
+    </div>
+    <div class="fot-sec" data-aos="fade-left">
+        <h2>
+            Quick Links </h2>
+        <p> <a href="#">- Home</a></p>
+        <p><a href="#">- Faculty</a></p>
+        <p><a href="#">- Admission enquiry</a></p>
+        <p><a href="#">- Contact</a></p>
+    </div>
+    <div class="fot-sec" data-aos="fade-left">
+        <h2>
+            Have a Question ?</h2>
+        <p><img src="white location.png" width="20px"> - Belgaum, Karnataka</a></p>
+        <p><img src="white call.png" width="20px"> <a href="tel: +91 9986434604">- 9986434604</a></p>
+        <p><img src="white email.png" width="30px"> - ssv.official1957@gmail.com</p></a></p>
+    </div>
+
+</div>
+<div class="copyright">
+  Copyright &copy2023. All rights reserved. | This website is made by students of KLS GIT
+</div>
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+function sendmail(){
+Email.send({
+    SecureToken: "dff321ab-94f1-457e-a22e-17ee27244b35",
+    // Host : "smtp.elasticemail.com",
+    // Username : "gneshkugaji@gmail.com",
+    // Password : "C8B0BBF186939AC5799E6175BCA40F487005",
+    To : 'ssv.official1957@gmail.com',
+    From :'gneshkugaji@gmail.com',
+    Subject : "new contact form enquiry",
+    Body : "Name :"+document.getElementById("name").value
+            +"<br> Email :"+document.getElementById("email").value
+            +"<br> Phone no. :"+document.getElementById("phone").value
+            +"<br> message :"+document.getElementById("message").value
+}).then(
+  message => alert(message)
+);
+}
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 150,
+        duration: 1000,
+    });
+</script>
+
+
+    
+</body>
+</html>
